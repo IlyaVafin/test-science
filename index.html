@@ -9,9 +9,19 @@
 	<link rel="stylesheet" href="styles/hero-slider.css">
 	<link rel="stylesheet" href="styles/search-block.css">
 	<link rel="stylesheet" href="styles/calendar.css">
-	<link rel="stylesheet" href="styles/events-block.css">
 	<link rel="stylesheet" href="styles/global-button-styles.css">
-	<link rel="stylesheet" href="styles/form-bid.css">
+
+	<link rel="preload" href="styles/form-bid.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="styles/form-bid.css">
+	</noscript>
+
+	<link rel="preload" href="styles/events-block.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="styles/events-block.css.css">
+	</noscript>
+
+
 	<title>Science</title>
 </head>
 
@@ -73,7 +83,7 @@
 	<div class="container">
 		<div class='slider'>
 			<div class="slider__track">
-				
+
 				<section class="slide">
 					<img class='slide__image' src="images/hero-slide.jpg" alt="hero-slide">
 					<div class="slide__text">
@@ -328,8 +338,10 @@
 								экосистеме в интересах устойчивого развития””</p>
 							<div class='events-block__item-buttons'>
 								<button id='button-write' class='events-block__item-button button-transparent'>Написать</button>
-								<button id='button-more' class='events-block__item-button button-active button-text'>Подробнее <img
-										src="images/arrow-right.svg" alt="arrow-right/more-button"></button>
+								<button id='button-more' class='events-block__item-button button-active button-text'>
+									Подробнее
+									<img src="images/arrow-right.svg" alt="arrow-right/more-button">
+								</button>
 							</div>
 						</article>
 					</li>
@@ -352,7 +364,7 @@
 							<input class='form__bid-input' placeholder='Имя' autocomplete='name' id='name' type="text">
 						</div>
 						<div>
-							<label style='display: none;' for="email">Имя</label>
+							<label style='display: none;' for="email">Почта</label>
 							<input class='form__bid-input' placeholder='Почта' autocomplete='email' id='email' type="email"
 								inputmode='email'>
 						</div>
@@ -390,19 +402,19 @@
 						<div class="form-bid__line"></div>
 					</div>
 					<div class="form__bid-links">
-						<a id='yandex-link' href=""><img src="images/yandex-icon.svg" alt=""></a>
-						<a id='vk-link' href=""><img src="images/vk-icon.svg" alt=""></a>
+						<a id='yandex-link' href=""><img loading='lazy' src="images/yandex-icon.svg" alt=""></a>
+						<a id='vk-link' href=""><img loading='lazy' src="images/vk-icon.svg" alt=""></a>
 					</div>
 				</form>
 
-				<img id='form-image' src="images/bg2.svg" alt="">
+				<img loading='lazy' id='form-image' src="images/bg2.svg" alt="">
 
 			</div>
 		</section>
 	</div>
 
 
-	<img class='bg-image bg-1' src="images/bg-1.svg" alt="bg-1">
+	<img loading='lazy' class='bg-image bg-1' src="images/bg-1.svg" alt="bg-1">
 	<script src='scripts/header.js' async defer></script>
 	<script src='scripts/slider.js' async defer></script>
 	<script src='scripts/calendar.js' async defer></script>
