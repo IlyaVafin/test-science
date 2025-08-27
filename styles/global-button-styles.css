@@ -1,0 +1,28 @@
+button {
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.icon-button {
+	background: none;
+}
+
+.button-text {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 100%;
+}
+
+.button-active {
+	background-color: var(--main-color-blue);
+	color: var(--main-color-white);
+}
+
+.button-transparent {
+	background: transparent;
+	border: 1px solid var(--main-color-blue);
+	color: var(--main-color-blue);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+}

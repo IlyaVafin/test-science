@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+	--main-color-background: #f3f4f7;
+	--main-color-white: #fff;
+	--main-color-blue: #2f5dd3;
+	--main-color-red: #fc3f1d;
+	--main-color-light-blue: #0077ff;
+	--main-color-orange: #ff6b00;
+	--main-color-dark-blue: #242a38;
+
+	--accent-color-blue: #2f5dd31a;
+	--accent-color-gray: #6c6f75;
+	--accent-color-text: #455373;
+}
+
+/* DEFAULT STYLES */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--main-color-background);
+	position: relative;
+	padding-bottom: 128px;
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+mark {
+	background-color: var(--main-color-orange);
+	color: var(--main-color-white);
+}
+
+fieldset {
+	border: none;
+}
+
+/* TYPOGRAPHY */
+
+.block-title {
+	font-weight: 700;
+	font-style: Italic;
+	font-size: 32px;
+	line-height: 100%;
+}
+
+/* STATE */
+
+.active {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.bg-image {
+	position: absolute;
+}
+
+/* BG-IMAGE FOR FORM BLOCK */
+.bg-1 {
+	z-index: -2;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+
+/* CONTAINER */
+
+.container {
+	max-width: 23.875rem;
+	margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+	.container {
+		max-width: 300px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1184px;
+	}
+}
+
+@media (min-width: 935px) and (max-width: 1200px) {
+	.container {
+		max-width: 920px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 935px) {
+	.container {
+		max-width: 800px;
+	}
+}
+
+@media (max-width: 768px) {
+	.bg-1 {
+		bottom: 14%;
+	}
+}
+
+@media (max-width: 500px) {
+	.block-title {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 416px) and (max-width: 768px) {
+	.container {
+		max-width: 578px;
+	}
+}

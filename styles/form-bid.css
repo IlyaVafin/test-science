@@ -1,0 +1,212 @@
+.form-block {
+	margin-top: 48px;
+}
+
+.form-block h2 {
+	margin-bottom: 24px;
+}
+
+.form-block__container {
+	display: flex;
+	position: relative;
+}
+
+.form-bid {
+	background-color: var(--main-color-white);
+	max-width: 580px;
+	width: 100%;
+	padding: 48px;
+}
+
+.form-bid__select-wrapper {
+	position: relative;
+}
+
+.form-bid__select-wrapper select {
+	max-width: 484px;
+	width: 100%;
+	height: 48px;
+	padding: 0 40px 0 12px;
+	font-size: 16px;
+
+	border: 2px solid #6c6f754d;
+	background-color: #fff;
+	color: #333;
+	outline: none;
+
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.form-bid__select-wrapper select:focus {
+	border: none;
+}
+
+.form-bid__select-wrapper select:focus-visible {
+	outline: 2px solid black;
+}
+
+
+.form-bid__select-wrapper::after {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 35%;
+	transform: translateY(-45%);
+	transform: rotate(90deg);
+	width: 60px;
+	height: 20px;
+
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%232f5dd3' fill-rule='evenodd' clip-rule='evenodd' d='M16.06 10.94C16.3409 11.2213 16.4987 11.6025 16.4987 12C16.4987 12.3975 16.3409 12.7788 16.06 13.06L10.404 18.718C10.1226 18.9993 9.74098 19.1572 9.34312 19.1571C9.14612 19.1571 8.95106 19.1182 8.76908 19.0428C8.58709 18.9674 8.42174 18.8568 8.28248 18.7175C8.14321 18.5782 8.03275 18.4128 7.95741 18.2308C7.88206 18.0487 7.8433 17.8537 7.84335 17.6567C7.8434 17.4597 7.88224 17.2646 7.95768 17.0826C8.03311 16.9006 8.14364 16.7353 8.28298 16.596L12.878 12L8.28198 7.40401C8.13865 7.2657 8.0243 7.10024 7.9456 6.91727C7.8669 6.73431 7.82543 6.5375 7.82361 6.33833C7.82178 6.13916 7.85964 5.94162 7.93498 5.75724C8.01031 5.57287 8.12161 5.40534 8.26238 5.26443C8.40315 5.12353 8.57058 5.01207 8.75489 4.93656C8.93919 4.86105 9.13669 4.82301 9.33586 4.82464C9.53503 4.82628 9.73188 4.86756 9.91492 4.94609C10.098 5.02461 10.2635 5.13881 10.402 5.28201L16.062 10.94Z'/></svg>")
+		no-repeat center center;
+	background-size: contain;
+	pointer-events: none;
+}
+
+.form-bid__inputs {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+.form__bid-input {
+	max-width: 484px;
+	width: 100%;
+	height: 48px;
+	border: 2px solid #6c6f754d;
+	padding: 13px 24px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	color: #6c6f75;
+}
+
+.form-bid__checkboxes legend {
+	display: contents;
+
+}
+
+.form-bid__checkboxes {
+	display: flex;
+	column-gap: 24px;
+	margin: 24px 0;
+	color: var(--accent-color-gray);
+}
+
+.form-bid__checkbox {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	z-index: -1;
+}
+
+.form-bid__checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.form-bid__custom-checkbox {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 2px solid var(--main-color-blue);
+	position: relative;
+	vertical-align: sub;
+	background-color: var(--main-color-white);
+}
+
+.form-bid__custom-checkbox::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 14px;
+	height: 14px;
+	background-color: var(--main-color-blue);
+	transition: 0.2s ease-in;
+}
+
+.form-bid__checkbox:checked + .form-bid__custom-checkbox::before {
+		transform: translate(-50%, -50%) scale(1);
+}
+
+.form-bid__button {
+	max-width: 484px;
+	width: 100%;
+	height: 48px;
+	margin-top: 24px;
+}
+
+.form-bid__other-way {
+	max-width: 484px;
+	position: relative;
+	margin: 24px 0;
+}
+
+.form-bid__other-way span {
+	position: absolute;
+	top: -12px;
+	background-color: var(--main-color-white);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-bid__line {
+	width: 100%;
+	height: 1px;
+	background-color: #6c6f754d;
+}
+
+.form__bid-links {
+	display: flex;
+	column-gap: 24px;
+}
+
+.form__bid-links a {
+	max-width: 230px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 48px;
+}
+
+#yandex-link {
+	background-color: var(--main-color-red);
+}
+
+#vk-link {
+	background-color: var(--main-color-light-blue);
+}
+
+#select-choice {
+	margin-top: 9px;
+}
+
+#form-image {
+	position: absolute;
+	z-index: -1;
+	top: -120px;
+	right: -30px;
+	max-width: 100vw;
+	height: 750px;
+}
+
+@media (max-width: 768px) {
+	#form-image {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.form-bid__checkboxes {
+		flex-direction: column;
+		row-gap: 8px;
+	}
+	.form-bid__other-way {
+		font-size: 14px;
+	}
+}
+
